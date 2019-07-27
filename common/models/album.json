@@ -1,0 +1,35 @@
+{
+  "name": "Album",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "\"\""
+    },
+    "images": {
+      "type": [
+        "string"
+      ],
+      "default": [
+        "[]"
+      ]
+    },
+    "videos": {
+      "type": [
+        "string"
+      ],
+      "default": [
+        "[]"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

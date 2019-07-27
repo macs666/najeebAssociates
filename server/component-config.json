@@ -1,0 +1,6 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "najeebAssociates/explorer",
+    "generateOperationScopedModels": true
+  }
+}
