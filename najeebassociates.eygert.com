@@ -1,17 +1,19 @@
 server {
-    server_name  www.najeeebassociates.eygert.com;
-    rewrite ^/(.*) http://najeeebassociates.eygert.com/$1 permanent;
+    server_name  www.najeebassociates.eygert.com;
+    rewrite ^/(.*) http://najeebassociates.eygert.com/$1 permanent;
 
 }
+
+ln -s ~/servers/najeebAssociates/najeebassociates.eygert.com /etc/nginx/sites-enabled/najeebassociates.eygert.com
 
 server {
     server_name najeeebassociates.eygert.com;
 
-    access_log /var/www/najeeebassociates/logs/access.log;
-    error_log /var/www/najeeebassociates/logs/error.log;
+    access_log /var/www/najeebassociates/logs/access.log;
+    error_log /var/www/najeebassociates/logs/error.log;
 
     location / {
-        root   /var/www/najeeebassociates/;
+        root   /var/www/najeebassociates/;
         index  index.html;
     }
     location /explorer/ {
