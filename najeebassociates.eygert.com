@@ -4,8 +4,6 @@ server {
 
 }
 
-ln -s ~/servers/najeebAssociates/najeebassociates.eygert.com /etc/nginx/sites-enabled/najeebassociates.eygert.com
-
 server {
     server_name najeeebassociates.eygert.com;
 
